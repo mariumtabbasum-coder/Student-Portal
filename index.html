@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top portal-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-icon"><i class="bi bi-mortarboard-fill"></i></span>
+                Student<span>Portal</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#records">Student Records</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <button id="themeBtn" class="btn theme-btn">
+                            <i class="bi bi-moon-stars-fill"></i> Change Theme
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="section-tag">WELCOME TO STUDENT PORTAL</span>
+                        <h1 id="heroHeading">Build Your Future With The Right Skills.</h1>
+                        <p>
+                            Explore practical courses, complete your registration,
+                            and manage student records through one simple portal.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#courses" class="btn primary-btn">Explore Courses <i class="bi bi-arrow-right"></i></a>
+                            <a href="#registration" class="btn outline-btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div id="heroImage" class="hero-visual">
+                        <div class="visual-circle circle-one"></div>
+                        <div class="visual-circle circle-two"></div>
+                        <div class="student-card">
+                            <div class="student-avatar"><i class="bi bi-person-workspace"></i></div>
+                            <div>
+                                <small>LEARNING JOURNEY</small>
+                                <h5>Start Today</h5>
+                            </div>
+                            <span class="status-dot"></span>
+                        </div>
+                        <div class="floating-card course-mini">
+                            <i class="bi bi-book-half"></i>
+                            <div><small>Courses</small><strong>03 Available</strong></div>
+                        </div>
+                        <div class="floating-card register-mini">
+                            <i class="bi bi-check2-circle"></i>
+                            <div><small>Registration</small><strong>Quick & Easy</strong></div>
+                        </div>
+                        <div class="visual-title">
+                            <i class="bi bi-laptop"></i>
+                            <span>Learn • Practice • Grow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section-padding courses-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="section-tag">OUR COURSES</span>
+                <h2>Choose What You Want To Learn</h2>
+                <p>Build a strong foundation with practical web development courses.</p>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <div class="course-icon html-icon"><i class="bi bi-filetype-html"></i></div>
+                        <span class="course-number">01</span>
+                        <h3>HTML & CSS</h3>
+                        <p class="course-short">Learn how to structure and style modern web pages.</p>
+                        <div class="course-description">
+                            HTML creates the structure of a webpage while CSS controls its layout, colors,
+                            spacing, typography and responsive appearance.
+                        </div>
+                        <button class="read-more-btn">Read More <i class="bi bi-chevron-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <div class="course-icon js-icon"><i class="bi bi-filetype-js"></i></div>
+                        <span class="course-number">02</span>
+                        <h3>JavaScript</h3>
+                        <p class="course-short">Add logic, events and interactive behavior to websites.</p>
+                        <div class="course-description">
+                            JavaScript helps make websites interactive by working with variables, conditions,
+                            functions, events, DOM elements and user actions.
+                        </div>
+                        <button class="read-more-btn">Read More <i class="bi bi-chevron-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="course-card">
+                        <div class="course-icon jq-icon"><i class="bi bi-code-square"></i></div>
+                        <span class="course-number">03</span>
+                        <h3>jQuery</h3>
+                        <p class="course-short">Create easier DOM interactions and visual effects with jQuery.</p>
+                        <div class="course-description">
+                            jQuery makes common JavaScript tasks simpler and provides useful methods for events,
+                            effects, DOM manipulation, classes and form handling.
+                        </div>
+                        <button class="read-more-btn">Read More <i class="bi bi-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section-padding registration-section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="section-tag">REGISTRATION</span>
+                <h2>Register As A Student</h2>
+                <p>Fill in all the details below to complete your registration.</p>
+            </div>
+
+            <div class="registration-wrapper">
+                <div class="registration-info">
+                    <div class="info-badge"><i class="bi bi-shield-check"></i> Secure Registration</div>
+                    <h3>Start your learning journey.</h3>
+                    <p>
+                        Enter your correct information. Every field is checked before the form
+                        can be submitted.
+                    </p>
+
+                    <div class="info-list">
+                        <div><i class="bi bi-check-circle-fill"></i><span>Real-time form validation</span></div>
+                        <div><i class="bi bi-check-circle-fill"></i><span>11-digit phone verification</span></div>
+                        <div><i class="bi bi-check-circle-fill"></i><span>Password confirmation</span></div>
+                        <div><i class="bi bi-check-circle-fill"></i><span>Instant student record</span></div>
+                    </div>
+                </div>
+
+                <div class="registration-form-card">
+                    <form id="registrationForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                                <small class="error-message" id="nameError"></small>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="text" class="form-control" id="email" placeholder="example@email.com">
+                                <small class="error-message" id="emailError"></small>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" maxlength="11" placeholder="03XXXXXXXXX">
+                                <small class="error-message" id="phoneError"></small>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Minimum 8 characters">
+                                <small class="error-message" id="passwordError"></small>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter password">
+                                <small class="error-message" id="confirmPasswordError"></small>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="course" class="form-label">Select Course</label>
+                                <select class="form-select" id="course">
+                                    <option value="">Choose a course</option>
+                                    <option value="HTML & CSS">HTML & CSS</option>
+                                    <option value="JavaScript">JavaScript</option>
+                                    <option value="jQuery">jQuery</option>
+                                </select>
+                                <small class="error-message" id="courseError"></small>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn register-btn">
+                                    Register Student <i class="bi bi-arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="successMessage" class="success-message">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Registration Successful</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Records -->
+    <section id="records" class="section-padding records-section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">STUDENT RECORDS</span>
+                <h2>Registered Students</h2>
+                <p>New students will appear here after successful registration.</p>
+            </div>
+
+            <div class="records-card">
+                <div class="table-responsive">
+                    <table class="table align-middle" id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Course</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTableBody">
+                            <tr id="emptyRow">
+                                <td colspan="4" class="empty-records">
+                                    <i class="bi bi-inbox"></i>
+                                    <span>No student records yet.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="portal-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+            <p class="mb-0">© 2026 Student Registration Portal</p>
+            <p class="mb-0">Designed with HTML, CSS, Bootstrap & jQuery</p>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
